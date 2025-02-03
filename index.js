@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
     btn.addEventListener('click', () => {
-        newPass.value = "New Password Generated"; 
+        newPass.value = "New Password Generated";
+        
+     
+    let capitalLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
+    let smallLetters = 'abcdefghijklmnopqrstuvwxyz';
+    let numberStr = '0123456789';
+    let symbolsStr = '!@#$%^&*()_+[]{}|;:,.<>?';
     });
 });
