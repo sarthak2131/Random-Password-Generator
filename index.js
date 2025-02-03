@@ -17,5 +17,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let smallLetters = 'abcdefghijklmnopqrstuvwxyz';
     let numberStr = '0123456789';
     let symbolsStr = '!@#$%^&*()_+[]{}|;:,.<>?';
+    let finalStr = capitalLetters
+    let latestPass = ''
+    for (let i = 0; i < slider.value; i++) {
+        let randNum = Math.floor(Math.random()*finalStr.length )
+        latestPass += finalStr[randNum];
+    }
+    newPass.value = `${latestPass}`
     });
 });
