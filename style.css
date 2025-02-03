@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page Background */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0d1117;
+    color: #e6edf3;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Password Input */
+#newPass {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    background: #22262d;
+    color: #e6edf3;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+#newPass:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Slider Container */
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="range"] {
+    width: 100%;
+    appearance: none;
+    background: #007bff;
+    height: 4px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#rangeVal {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9da5b4;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    color: #cccccc;
+}
+
+input[type="checkbox"] {
+    accent-color: #007bff;
+    cursor: pointer;
+}
+
+/* Generate Button */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Password Generator</h1>
+        
+        <!-- Password Display & Copy Button -->
+        <div class="password-container">
+            <input type="text" id="newPass" placeholder="Generated Password" readonly>
+            <button id="copyBtn" title="Copy to Clipboard">📋</button>
+        </div>
+
+        <!-- Password Length Slider -->
+        <div class="slider-container">
+            <input type="range" id="lengthRange" min="6" max="30" value="15">
+            <span id="rangeVal">15</span>
+        </div>
+
+        <!-- Checkbox Options -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="uppercase"> Uppercase Letters</label>
+            <label><input type="checkbox" id="lowercase"> Lowercase Letters</label>
+            <label><input type="checkbox" id="numbers"> Numbers</label>
+            <label><input type="checkbox" id="symbols"> Symbols</label>
+        </div>
+
+        <!-- Generate Button -->
+        <button id="generateBtn">Generate Password</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
